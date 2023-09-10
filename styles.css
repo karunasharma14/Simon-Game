@@ -1,4 +1,4 @@
-body {
+/* body {
   text-align: center;
   background-color: #011F3F;
 }
@@ -50,4 +50,86 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+} */
+
+
+body {
+  text-align: center;
+  background-color: #011F3F;
+  font-size: 16px; /* Set a base font size for mobile devices */
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem; /* Reduce the font size for smaller screens */
+  margin: 5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: block;
+  width: 80%; /* Adjust the width for mobile devices */
+  margin: auto;
+}
+
+.btn {
+  margin: 15px; /* Reduce button margin for mobile devices */
+  display: inline-block;
+  height: 150px; /* Reduce button size for mobile devices */
+  width: 150px; /* Reduce button size for mobile devices */
+  border: 8px solid black; /* Adjust border size for mobile devices */
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+/* Maintain the same background colors for buttons */
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 10px white; /* Reduce box shadow for mobile devices */
+  background-color: grey;
+}
+
+/* Add a media query for smaller screens (e.g., phones) */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px; /* Further reduce font size for smaller screens */
+  }
+
+  #level-title {
+    font-size: 1.5rem; /* Reduce font size even more for smaller screens */
+  }
+
+  .container {
+    width: 90%; /* Adjust width further for smaller screens */
+  }
+
+  .btn {
+    margin: 10px; /* Reduce margin even more for smaller screens */
+    height: 100px; /* Adjust button size for smaller screens */
+    width: 100px; /* Adjust button size for smaller screens */
+    border: 6px solid black; /* Adjust border size even more for smaller screens */
+  }
+
+  .pressed {
+    box-shadow: 0 0 6px white; /* Further reduce box shadow for smaller screens */
+  }
 }
