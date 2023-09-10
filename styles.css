@@ -1,83 +1,52 @@
-/* body {
-  text-align: center;
-  background-color: #011F3F;
-}
-
-#level-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin:  5%;
-  color: #FEF2BF;
-}
-
-.container {
-  display: block;
-  width: 50%;
-  margin: auto;
-
-}
-
-.btn {
-  margin: 25px;
-  display: inline-block;
-  height: 200px;
-  width: 200px;
-  border: 10px solid black;
-  border-radius: 20%;
-}
-
-.game-over {
-  background-color: red;
-  opacity: 0.8;
-}
-
-.red {
-  background-color: red;
-}
-
-.green {
-  background-color: green;
-}
-
-.blue {
-  background-color: blue;
-}
-
-.yellow {
-  background-color: yellow;
-}
-
-.pressed {
-  box-shadow: 0 0 20px white;
-  background-color: grey;
-} */
-
-
 body {
   text-align: center;
   background-color: #011F3F;
-  font-size: 16px; /* Set a base font size for mobile devices */
+  font-size: 16px;
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 2rem; /* Reduce the font size for smaller screens */
+  font-size: 2rem;
   margin: 5%;
   color: #FEF2BF;
 }
 
 .container {
   display: block;
-  width: 80%; /* Adjust the width for mobile devices */
+  width: 80%;
   margin: auto;
 }
 
+
+#start-button {
+  background-color: #bd0fe4;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for the button */
+#start-button:hover {
+  background-color: #e90fa0;
+  transform: scale(1.05);
+}
+
+/* Active (click) effect for the button */
+#start-button:active {
+  background-color: #2d06ed;
+}
+
+
 .btn {
-  margin: 15px; /* Reduce button margin for mobile devices */
+  margin: 15px;
   display: inline-block;
-  height: 150px; /* Reduce button size for mobile devices */
-  width: 150px; /* Reduce button size for mobile devices */
-  border: 8px solid black; /* Adjust border size for mobile devices */
+  height: 150px; 
+  width: 150px;
+  border: 8px solid black; 
   border-radius: 20%;
 }
 
@@ -104,32 +73,32 @@ body {
 }
 
 .pressed {
-  box-shadow: 0 0 10px white; /* Reduce box shadow for mobile devices */
+  box-shadow: 0 0 10px white;
   background-color: grey;
 }
 
 /* Add a media query for smaller screens (e.g., phones) */
 @media screen and (max-width: 768px) {
   body {
-    font-size: 14px; /* Further reduce font size for smaller screens */
+    font-size: 14px;
   }
 
   #level-title {
-    font-size: 1.5rem; /* Reduce font size even more for smaller screens */
+    font-size: 1.5rem;
   }
 
   .container {
-    width: 90%; /* Adjust width further for smaller screens */
+    width: 90%;
   }
 
   .btn {
-    margin: 10px; /* Reduce margin even more for smaller screens */
-    height: 100px; /* Adjust button size for smaller screens */
-    width: 100px; /* Adjust button size for smaller screens */
-    border: 6px solid black; /* Adjust border size even more for smaller screens */
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    border: 6px solid black;
   }
 
   .pressed {
-    box-shadow: 0 0 6px white; /* Further reduce box shadow for smaller screens */
+    box-shadow: 0 0 6px white;
   }
 }
