@@ -2,6 +2,7 @@ body {
   text-align: center;
   background-color: #011F3F;
   font-size: 16px;
+  
 }
 
 #level-title {
@@ -81,6 +82,7 @@ body {
 @media screen and (max-width: 768px) {
   body {
     font-size: 14px;
+    margin-top: 25%;
   }
 
   #level-title {
@@ -90,6 +92,7 @@ body {
   .container {
     width: 90%;
   }
+  
 
   .btn {
     margin: 10px;
